@@ -1,0 +1,108 @@
+.background-main {
+  background: url(background-main.png);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.25;
+}
+
+.news {
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.image-1 {
+  width: 100%;
+  height: 30%;
+  display: block;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+  color: black;
+  text-align: justify;
+  padding-top: 10px;
+  font-family: "Merriweather", serif;
+  margin-top: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 150%;
+}
+
+@media (min-width: 60rem) {
+  .image-1 {
+    width: 70%;
+    height: 35%;
+    border-radius: 5px;
+    margin: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+  h2 {
+    width: 70%;
+    font-size: 1.3rem;
+  }
+}
+
+.aside {
+  position: initial;
+}
+
+@media (min-width: 60rem) {
+  .aside {
+    position: absolute;
+    float: right;
+    top: 4.625rem;
+    right: 0.625rem;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgb(192, 44, 44);
+    width: 20%;
+  }
+}
+
+.leaders-list {
+  display: block;
+  list-style: none;
+  font-family: inherit;
+  padding: 0 0 0 0;
+  margin: 0.625rem;
+  text-align: center;
+}
+
+.CCM-leaders {
+  display: block;
+  list-style: none;
+  margin-top: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  line-height: 150%;
+}
+
+.leaders {
+  display: block;
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 150%;
+  text-align: center;
+  background-color: rgb(192, 44, 44);
+  color: ivory;
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+.leaders p {
+  padding-bottom: 10px;
+}
+
+.leader-image {
+  width: 128px;
+  height: 128px;
+  border: ivory 3px solid;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 10px;
+}

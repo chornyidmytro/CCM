@@ -1,0 +1,102 @@
+.signup-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+
+.signup-form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 0.2rem;
+  row-gap: 1.3rem;
+
+  label {
+    font-weight: bold;
+    height: 1rem;
+    padding: 2px;
+  }
+
+  label[for="agree-terms"] {
+    margin-left: 0;
+  }
+
+  select {
+    border: 1px solid;
+    font: inherit;
+
+    &:focus {
+      outline: none;
+      background: rgba(236, 236, 8, 0.418);
+      border-color: #00a650;
+    }
+
+    @media (min-width: 60rem) {
+      grid-column: span 2;
+    }
+  }
+
+  input {
+    height: 1rem;
+    font: inherit;
+
+    &:not([type="checkbox"]) {
+      border: 1px solid;
+    }
+    &:focus {
+      outline: none;
+      background: rgba(236, 236, 8, 0.418);
+      border-color: #00a650;
+    }
+  }
+  input[id*="terms"] + label {
+    width: auto;
+  }
+
+  input[type="checkbox"] {
+    border: 1px solid;
+    background: white;
+    height: 1rem;
+    width: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &:checked {
+      background: rgba(236, 236, 8, 0.418);
+      border-color: #00a650;
+    }
+  }
+
+  .button {
+    margin-top: 1rem;
+    background-color: #00a650;
+    color: rgb(236, 236, 8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active,
+    &:hover {
+      background-color: rgb(236, 236, 8);
+      color: #00a650;
+    }
+  }
+
+  @media (min-width: 60rem) {
+    margin: auto;
+    width: 40rem;
+  }
+}
